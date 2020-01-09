@@ -51,13 +51,6 @@ void MainWindow::updateDataReadProgress(qint64 bytesRead, qint64 totalBytes)
     ui->progressBar->setValue(bytesRead);
 }
 
-//void MainWindow::replyFinished(QNetworkReply * reply)
-//{
-//    QString all = reply->readAll();
-//    ui->textBrowser->setText(all);
-//    reply->deleteLater();
-//}
-
 void MainWindow::on_pushButton_clicked()
 {
     url = ui->lineEdit->text();
